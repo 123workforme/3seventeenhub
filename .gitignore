@@ -1,0 +1,20 @@
+# 3seventeen Hub - Dist
+# Only the dist/ folder and keys.txt are tracked here.
+# Source files are kept locally and NOT pushed.
+
+# Ignore all source
+games/
+loader.lua
+build.sh
+keygen.sh
+.env
+.env.example
+
+# Track dist output
+!dist/
+!dist/**
+
+# OS files
+.DS_Store
+*.swp
+*~
