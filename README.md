@@ -16,6 +16,8 @@ Script modules served via GitHub raw URLs. Loader fetches from here.
 ## Structure
 
 ```
+loader.lua            -- game router (detects PlaceId, fetches module)
+premium_loader.lua    -- sets tier=paid, uploaded to Luarmor
 dist/
   mm2.lua
   ftf.lua
@@ -23,9 +25,18 @@ dist/
   uw.lua
   gmg.lua
   glass_bridge.lua
-  keys.txt
 ```
 
 ## Usage
 
-Executed via loadstring through Sirius Gateway. Do not run these files directly.
+**Free tier:**
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/123workforme/3seventeenhub/main/dist/loader.lua"))()
+```
+
+**Premium tier (via Luarmor):**
+```lua
+loadstring(game:HttpGet("LUARMOR_LOADER_URL"))()
+```
+
+Premium users go through Luarmor's key gate (HWID locked) before the loader executes.

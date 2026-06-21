@@ -27,7 +27,7 @@ local Window = Rayfield:CreateWindow({
     LoadingTitle = "3seventeen Hub",
     LoadingSubtitle = "Tower of Hell",
     Theme = "Default",
-    ScriptID = "sid_hq5cz7d0mmat",
+
     DisableRayfieldPrompts = false,
     DisableBuildWarnings = false,
     ConfigurationSaving = {

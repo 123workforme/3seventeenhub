@@ -48,7 +48,7 @@ local Window = Rayfield:CreateWindow({
     LoadingTitle = "3seventeen",
     LoadingSubtitle = "underground war",
     Theme = MidnightGold,
-    ScriptID = "sid_hq5cz7d0mmat",
+
     ToggleUIKeybind = "K",
     DisableRayfieldPrompts = false,
     DisableBuildWarnings = true,
