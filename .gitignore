@@ -1,18 +1,21 @@
-# 3seventeen Hub - Dist
-# Only the dist/ folder and keys.txt are tracked here.
-# Source files are kept locally and NOT pushed.
+# 3seventeen Hub
+# build/ = obfuscated scripts (committed, pushed, served via raw URL)
+# dist/  = readable source (local only, never pushed)
 
-# Ignore all source
+# Ignore source
+dist/
 games/
 loader.lua
+premium_loader.lua
 build.sh
 keygen.sh
+site/
 .env
 .env.example
 
-# Track dist output
-!dist/
-!dist/**
+# Track build output
+!build/
+!build/**
 
 # OS files
 .DS_Store
